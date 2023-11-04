@@ -54,14 +54,14 @@
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="#">Descarga la APP</a></li>
                             <li class="nav-item dropdown">
-                                <a href="menu.html" class="nav-link">Menu</a>
+                                <a href="#" class="nav-link">Menu</a>
                                 <div class="dropdown-content">
                                     <a href="#">Restaurantes</a>
                                     <a href="#">Mercados</a>
                                     <a href="#">Tiendas</a>
                                 </div>
                             </li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
                         </ul>
 
 
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="icon-user">
-                            <a href="login.html">
+                            <a href="usuario">
                                 <i class="las la-user"></i>
                             </a>
                             <a href="negocio">
@@ -116,32 +116,31 @@
         <div class="ts-page-block">
             <div class="background-form">
                 <form action="/action_page.php">
-                    <label for="tipo">Tipo de usuario:</label>
-                    <select name="tipo" id="tipo">
-                        <option value="usuario">Usuario</option>
-                        <option value="negocio">Negocio</option>
-                        <option value="otro">Otro</option>
+                <label for="tipo">Tipo de usuario:</label>
+                <select name="tipo" id="tipo">
+                  <option value="usuario">Usuario</option>
+                  <option value="negocio">Negocio</option>
+                  <option value="otro">Otro</option>
+                </select>
+              
+                <div id="otro-dropdown">
+                  <label for="es-empresa">¿Es empresa?</label>
+                  <select name="es-empresa" id="es-empresa">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div id="otro-dropdown">
+                    <label for="es-empresa">¿Es empresa?</label>
+                    <select name="es-empresa" id="es-empresa">
+                      <option value="si">Sí</option>
+                      <option value="no">No</option>
                     </select>
-
-                    <div id="otro-dropdown">
-                        <label for="es-empresa">¿Es empresa?</label>
-                        <select name="es-empresa" id="es-empresa">
-                            <option value="si">Sí</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-
-                    <div id="otro-dropdown">
-                        <label for="es-empresa">¿Es empresa?</label>
-                        <select name="es-empresa" id="es-empresa">
-                            <option value="si">Sí</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
+                  </div>
+              
+                <input type="submit" value="Enviar">
+              </form></div>
         </div>
 
 
@@ -154,6 +153,18 @@
         <div class="container">
 
             <div class="foo-row">
+                <div class="foo-col">
+                    <h2>Suscríbete <br>a nuestro blog</h2>
+                    <form action="" method="GET">
+
+                        <div class="f-input">
+                            <input type="email" placeholder="¡Ingresa tu correo!" required>
+                            <button type="submit" class="ts-btn-round btn-primary"><i
+                                    class="far fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+
+                </div>
 
                 <div class="foo-col">
                     <ul>

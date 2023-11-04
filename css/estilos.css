@@ -142,7 +142,7 @@ img {
 }
 
 .header-menu .ts-logo {
-    height: 64px;
+    height: 78px;
 }
 
 .ts-menu {
@@ -534,7 +534,7 @@ img {
     display: flex;
     width: 25%;
     height: 600px;
-    margin: 70px 250px;
+    margin: 100px 100px 50px 380px;
 }
 .column-info-usuario{
     flex: 1;
@@ -571,10 +571,20 @@ img {
     margin-right: 10px;
 }
 .button2{
-    color: var(--color-principal);
-    background-color: var(--color-fondo);
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    border-color: var(--color-fondo);
+    border-style: solid;
+    border-width: 2px;
     border-radius: 30px;
     padding: 15px;
+}
+.button2:hover{
+    background-color: var(--color-primary-hover);
+    color: #71cb9f;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #71cb9f;
 }
 
 /* Equa contenido negocio ***************************************************** */
@@ -648,12 +658,21 @@ img {
     padding: 15px;
     margin-right: 10px;
 }
+.button1:hover{
+    background-color:rgb(255, 184, 160);
+}
 .button3{
     background-color: var(--color-principal);
     color: var(--color-fondo);
     border-radius: 30px;
     padding: 15px;
 }
+.button3:hover{
+    border-color: var(--color-primary-hover);
+    color: #71cb9f;
+    border-color: #71cb9f;
+}
+
 /* Footer ***************************************************** */
 
 footer {
