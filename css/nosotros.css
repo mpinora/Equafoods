@@ -1,0 +1,54 @@
+:root {
+    --color-principal: #279991;
+    --color-primary-hover: #279991;
+    --color-verde: #04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+.about-us {
+    background-color: #279991;
+    padding: 20px;
+    text-align: center;
+}
+.section-title {
+    font-size: 24px;
+    color: gold;
+    font-family: Lapulap;
+}
+.section-content {
+    color: #F7F9FD;
+    font-size: 16px;
+    margin: 20px;
+    font-family: Korolev, Arial Black, sans-serif;
+}
+
+.section-subtitulos{
+    color: gold;    
+    font-size: 16px;
+    font-family: Lapulap;
+}
+
+.img-qhacemos{
+   width: 350px;
+   margin: auto;
+   
+}
+.img-pqlohacemos{
+    width: 350px;
+    margin: auto;
+    
+ }
+
+.img-obgeneral{
+    width: 350px;
+    margin: auto;
+} 
+.img-obespecifico{
+    width: 350px;
+    margin: auto;
+
+}
+ 
+
+
