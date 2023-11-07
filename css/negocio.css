@@ -1,0 +1,89 @@
+.titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #279991;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    color: #fdf3a7;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    background-color: #279991;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 78%;
+    height: 620px;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+}
+
+.contenido {
+    flex: 1;
+}
+
+.parrafo {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.lista {
+    margin: 50px 0;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: left;
+    color: aliceblue;
+}
+.listado{
+    margin: 113px 155px;
+}
+.listado p{
+    font-size: 15px;
+    text-align: left;
+}
+.fa-solid {
+    background-color:#279991;
+    color:#fdf3a7;
+    
+}
+.leermas_btn{
+    background-color: #279991;
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size:18px;
+   
+}
+
