@@ -59,11 +59,10 @@
                             <li><a href="negocio.html">Negocio-info</a></li>
                         </ul>
 
-
                         <div class="ts-icon-cart">
                             <a onclick="irAlCarrito()">
                                 <i class="las la-shopping-cart"></i>
-                                <span>0</span>
+                                <span id="cantidad-productos">0</span>
                             </a>
                         </div>
 
@@ -167,8 +166,8 @@
                                 <div class="precio">
                                     <span> $8.900</span>
                                 </div>
-                                <a href="https://www.sandwichqbano.com/"
-                                    class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 8900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -200,7 +199,8 @@
                                 <div class="precio">
                                     <span> $11.000</span>
                                 </div>
-                                <a href="https://frisby.com.co/" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Frisby)', 11900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -232,8 +232,8 @@
                                 <div class="precio">
                                     <span> $9.900</span>
                                 </div>
-                                <a href="https://www.losverdes.com.co/"
-                                    class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Papa Johns)', 9900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -265,7 +265,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="https://www.elcorral.com/" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (El Corral)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -307,7 +308,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="https://www.surtimax.com.co/" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de mercado (Surtimax)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -339,7 +341,8 @@
                                 <div class="precio">
                                     <span> $11.900</span>
                                 </div>
-                                <a href="https://d1.com.co/" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (D1)', 11900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -371,7 +374,8 @@
                                 <div class="precio">
                                     <span> $12.000</span>
                                 </div>
-                                <a href="https://aratiendas.com/" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas ARA)', 12000)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -404,7 +408,8 @@
                                 <div class="precio">
                                     <span> $13.900</span>
                                 </div>
-                                <a href="https://www.olimpica.com/" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Éxito)', 12000)">RESERVAR</a>
 
                             </div>
 
@@ -559,9 +564,9 @@
                     <div class="foo-col">
                         <ul>
                             <li><a href="http://">Descarga la APP</a></li>
-                            <li><a href="http://">Menu</a></li>
-                            <li><a href="http://">Nosotros</a></li>
-                            <li><a href="http://">Info-Negocio</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="negocio.html">Info-Negocio</a></li>
                         </ul>
                     </div>
 
@@ -596,6 +601,7 @@
 
     <!-- ================================= SCRIPT JS ================================= -->
     <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
 
     <script>
 

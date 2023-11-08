@@ -61,9 +61,9 @@
 
 
                         <div class="ts-icon-cart">
-                            <a href="#">
+                            <a onclick="irAlCarrito()">
                                 <i class="las la-shopping-cart"></i>
-                                <span>0</span>
+                                <span id="cantidad-productos">0</span>
                             </a>
                         </div>
 
@@ -164,7 +164,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -195,7 +196,8 @@
                                 <div class="precio">
                                     <span> $9.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -226,7 +228,8 @@
                                 <div class="precio">
                                     <span> $11.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 11900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -257,7 +260,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -291,7 +295,8 @@
                                 <div class="precio">
                                     <span> $12.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 12900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -325,7 +330,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Comida rápida (Qbano)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -489,9 +495,9 @@
                 <div class="foo-col">
                     <ul>
                         <li><a href="http://">Descarga la APP</a></li>
-                        <li><a href="http://">Menu</a></li>
-                        <li><a href="http://">Nosotros</a></li>
-                        <li><a href="http://">Info-Negocio</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="negocio.html">Info-Negocio</a></li>
                     </ul>
                 </div>
 
@@ -526,6 +532,7 @@
 
     <!-- ================================= SCRIPT JS ================================= -->
     <script src="js/app2.js"></script>
+    <script src="js/carrito.js"></script>
 
     <script>
 

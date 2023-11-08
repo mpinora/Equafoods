@@ -34,7 +34,6 @@ function quitarProducto(index) {
 
     mostrarCarrito();
     actualizarIconoCarrito(carrito.length);
-    alert(`Se ha quitado el producto "${productoRemovido.nombre}" del carrito.`);
 }
 
 // Función para vaciar completamente el carrito
@@ -42,6 +41,5 @@ function vaciarCarrito() {
     localStorage.removeItem('carrito');
     mostrarCarrito();
     actualizarIconoCarrito(0);
-    alert('Se ha vaciado el carrito.');
 }
 

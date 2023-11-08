@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Carrito | EquaFoods </title>
+    <title> 🛒 Carrito | EquaFoods </title>
     <link rel="icon" type="image/x-icon" href="img\icono-ventana.png">
 
     <!-- GOOGLE FONTS -->
@@ -50,24 +50,20 @@
 
                     <nav class="ts-menu">
                         <ul class="navbar-nav">
-                            <li><a href="index.html">Inicio</a></li>
                             <li><a href="#">Descarga la APP</a></li>
+                            <li><a href="index.html">Inicio</a></li>
                             <li class="nav-item dropdown">
                                 <a href="menu.html" class="nav-link">Menu</a>
-                                <div class="dropdown-content">
-                                    <a href="#">Restaurantes</a>
-                                    <a href="#">Mercados</a>
-                                    <a href="#">Tiendas</a>
-                                </div>
                             </li>
                             <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="negocio.html">Negocio-info</a></li>
                         </ul>
 
 
                         <div class="ts-icon-cart">
-                            <a href="#">
+                            <a onclick="irAlCarrito()">
                                 <i class="las la-shopping-cart"></i>
-                                <span>0</span>
+                                <span id="cantidad-productos">0</span>
                             </a>
                         </div>
 
@@ -113,11 +109,13 @@
 
 
         <!-- ================================= CARRITO DE COMPRAS ================================== -->
-        <h1>Carrito de Compras</h1>
-        <div id="productos-carrito"></div>
-        <h2>Total: <span id="total">$0.00</span></h2>
-        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
-        <button onclick="irAFormularioPago()">Pagar</button>
+        <div class="carrito-div">
+            <h1>Carrito de Compras</h1>
+            <div id="productos-carrito"></div>
+            <h2>Total: <span id="total">$0.00</span></h2>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <button onclick="irAFormularioPago()">Pagar</button>
+        </div>
 
         <!-- ================================= FOOTER ================================== -->
         <footer>
