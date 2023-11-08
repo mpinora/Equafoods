@@ -12,4 +12,4 @@ if(mysqli_connect_errno()){
     echo "Error de conexion". mysqli_connect_errno();
 }
 
-$URL = "http://localhost/equafoods2";
+$URL = "http://localhost/Equafoods";

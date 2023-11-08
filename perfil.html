@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Carrito | EquaFoods </title>
+    <title> Perfil | EquaFoods </title>
     <link rel="icon" type="image/x-icon" href="img\icono-ventana.png">
 
     <!-- GOOGLE FONTS -->
@@ -29,7 +29,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/perfil.css">
+
 </head>
 
 <body>
@@ -111,58 +112,112 @@
             </ul>
         </div>
 
+        <!-- ============================== Form ================== -->
+        <div class="ts-page-block">
+            <div class="perfil">
+                <h1>Perfil de Usuario</h1>
+                <p id="nombre"><strong>Nombre:</strong> Cargando...</p>
+                <p id="email"><strong>Email:</strong> Cargando...</p>
+            </div>
 
-        <!-- ================================= CARRITO DE COMPRAS ================================== -->
-        <h1>Carrito de Compras</h1>
-        <div id="productos-carrito"></div>
-        <h2>Total: <span id="total">$0.00</span></h2>
-        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <div class="pedidos">
+                <h2>Historial de Pedidos</h2>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>2023-01-01</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>2023-01-15</td>
+                        <td>$30.00</td>
+                    </tr>
+                </table>
+            </div>
 
-        <!-- ================================= FOOTER ================================== -->
-        <footer>
-
-            <div class="container">
-
-                <div class="foo-row">
-
-                    <div class="foo-col">
-                        <ul>
-                            <li><a href="http://">Menu</a></li>
-                            <li><a href="http://">Impacto</a></li>
-                            <li><a href="http://">Nosotros</a></li>
-                            <li><a href="http://">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="redes">
-                        <a href=""><i class="lab la-facebook-square"></i></a>
-                        <a href=""><i class="lab la-instagram"></i></a>
-                        <a href=""><i class="lab la-youtube"></i></a>
-                        <a href=""><i class="lab la-twitter-square"></i></i></a>
+            <div class="reseñas">
+                <h2>Reseñas Realizadas</h2>
+                <div class="reseña">
+                    <p><strong>Usuario:</strong> usuario123</p>
+                    <p><strong>Calificación:</strong> 5 estrellas</p>
+                    <p><strong>Comentario:</strong> Excelente servicio.</p>
+                </div>
+                <div class="reseña">
+                    <p><strong>Usuario:</strong> cliente456</p>
+                    <p><strong>Calificación:</strong> 4 estrellas</p>
+                    <p><strong>Comentario:</strong> Buena experiencia de compra.</p>
+                </div>
+            </div>
+        </div>
 
 
 
-                    </div>
+
+    </div>
+    <!-- ================================= FOOTER ================================== -->
+    <footer>
+
+        <div class="container">
+
+            <div class="foo-row">
+
+                <div class="foo-col">
+                    <ul>
+                        <li><a href="http://">Menu</a></li>
+                        <li><a href="http://">Impacto</a></li>
+                        <li><a href="http://">Nosotros</a></li>
+                        <li><a href="http://">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="redes">
+                    <a href=""><i class="lab la-facebook-square"></i></a>
+                    <a href=""><i class="lab la-instagram"></i></a>
+                    <a href=""><i class="lab la-youtube"></i></a>
+                    <a href=""><i class="lab la-twitter-square"></i></i></a>
+
+
 
                 </div>
 
             </div>
 
-
-        </footer>
-
-        <div class="foo-copy">
-            <div class="container">
-                <p>EQUAFOODS 2023 © Todos los derechos reservados. Creative Commons Attribution-Share Alike 3.0
-                    Unported.
-                </p>
-            </div>
         </div>
 
-        <!-- SCRIPT JS-->
-        <script src="app.js"></script>
-        <script src="js/carrito.js"></script>
-        <script src="js/carrito_carrito.js"></script>
+
+    </footer>
+
+    <div class="foo-copy">
+        <div class="container">
+            <p>EQUAFOODS 2023 © Todos los derechos reservados. Creative Commons Attribution-Share Alike 3.0
+                Unported.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- ================================= ANIMS AOS ================================= -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- ================================= SCRIPT JS ================================= -->
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/perfil.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1100,
+        })
+
+    </script>
 
 </body>
 

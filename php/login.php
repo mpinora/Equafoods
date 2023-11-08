@@ -18,8 +18,8 @@ if($contador > 0){
     session_start();
 
     $_SESSION['sesion_email'] = "$email";
-    header("location: http://localhost/equafoods2/login_exitoso.php");
+    header("location: http://localhost/Equafoods/perfil.html");
     
 }else{
-    echo "datos incorrectos";
+    echo "DATOS INCORRECTOS";
 }

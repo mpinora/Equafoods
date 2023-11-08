@@ -1,46 +1,47 @@
-// Función para obtener parámetros de consulta de la URL
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)')
-    var results = regex.exec(url);
+// Función para agregar un producto al carrito
+function agregarProducto(nombre, precio) {
+    // Recuperar el carrito de LocalStorage o inicializarlo si es la primera vez
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    // Agregar el producto al carrito
+    carrito.push({ nombre, precio });
+
+    // Guardar el carrito actualizado en LocalStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    // Actualizar el icono del carrito con la cantidad de productos
+    const cantidadProductos = carrito.length;
+    actualizarIconoCarrito(cantidadProductos);
 }
 
-// Mostrar la información en el carrito
-var cantidadEnCarrito = parseInt(getParameterByName('cantidad')); // Puedes crear una función para obtener parámetros de consulta
-
-if (!isNaN(cantidadEnCarrito) && cantidadEnCarrito > 0) {
-    var carritoContenido = document.getElementById('carritoContenido');
-    carritoContenido.innerHTML = '<p>Productos en el carrito: ' + cantidadEnCarrito + '</p>';
-
-    // Ejemplo de detalles del producto (puedes personalizar según tus necesidades)
-    var productos = [
-        { nombre: 'Pack de Comida', precio: 12900, cantidad: 1 },
-        // Puedes agregar más productos aquí
-    ];
-
-    // Crear una tabla para mostrar los detalles de los productos en el carrito
-    var tablaProductos = '<table border="1"><tr><th>Producto</th><th>Precio Unitario</th><th>Cantidad</th><th>Total</th></tr>';
-    var totalCarrito = 0;
-
-    for (var i = 0; i < productos.length; i++) {
-        var producto = productos[i];
-        var totalProducto = producto.precio * producto.cantidad;
-        totalCarrito += totalProducto;
-
-        tablaProductos += '<tr><td>' + producto.nombre + '</td><td>$' + producto.precio + '</td><td><input type="number" value="' + producto.cantidad + '" min="1"></td><td>$' + totalProducto + '</td></tr>';
-    }
-
-    tablaProductos += '</table>';
-
-    // Mostrar la tabla de productos y el total en el carrito
-    carritoContenido.innerHTML += tablaProductos;
-    carritoContenido.innerHTML += '<p>Total en el carrito: $' + totalCarrito + '</p>';
-} else {
-    // Si no hay productos en el carrito, muestra un mensaje
-    var carritoContenido = document.getElementById('carritoContenido');
-    carritoContenido.innerHTML = '<p>No hay productos en el carrito.</p>';
+// Función para actualizar el icono del carrito con la cantidad de productos
+function actualizarIconoCarrito(cantidad) {
+    const cantidadSpan = document.getElementById('cantidad-productos');
+    cantidadSpan.textContent = cantidad;
 }
+
+
+// Función para ir a la página del carrito
+function irAlCarrito() {
+    window.location.href = 'carrito_compra.html';
+}
+
+// Función para quitar un producto del carrito
+function quitarProducto(index) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const productoRemovido = carrito.splice(index, 1)[0];
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    mostrarCarrito();
+    actualizarIconoCarrito(carrito.length);
+    alert(`Se ha quitado el producto "${productoRemovido.nombre}" del carrito.`);
+}
+
+// Función para vaciar completamente el carrito
+function vaciarCarrito() {
+    localStorage.removeItem('carrito');
+    mostrarCarrito();
+    actualizarIconoCarrito(0);
+    alert('Se ha vaciado el carrito.');
+}
+
